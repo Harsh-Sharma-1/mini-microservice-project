@@ -1,7 +1,7 @@
 import React from 'react';
 import { CommentCreate, CommentList } from '../Comments';
 
-const PostItem = ({ data: { title, id } }) => {
+const PostItem = ({ data: { title, id, comments } }) => {
     return (
         <div
             className='card'
@@ -12,7 +12,7 @@ const PostItem = ({ data: { title, id } }) => {
         >
             <div className='card-body'>
                 <h4>{title}</h4>
-                <CommentList postId={id} />
+                <CommentList postId={id} data={comments} />
 
                 <h6>New comment</h6>
                 <CommentCreate postId={id} />

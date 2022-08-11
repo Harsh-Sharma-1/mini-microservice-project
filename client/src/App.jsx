@@ -3,7 +3,7 @@ import { PostCreate, PostList } from './components/Posts';
 
 const App = () => {
     return (
-        <div className='container m-5'>
+        <div className='container'>
             <h1>Create Post</h1>
             <PostCreate />
             <hr />
